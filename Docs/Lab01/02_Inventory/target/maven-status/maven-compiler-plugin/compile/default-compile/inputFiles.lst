@@ -1,0 +1,15 @@
+/Users/nicoletasarosi/Downloads/02_Inventory/src/main/java/inventory/repository/InventoryRepository.java
+/Users/nicoletasarosi/Downloads/02_Inventory/src/main/java/inventory/model/InhousePart.java
+/Users/nicoletasarosi/Downloads/02_Inventory/src/main/java/inventory/service/InventoryService.java
+/Users/nicoletasarosi/Downloads/02_Inventory/src/main/java/inventory/controller/Controller.java
+/Users/nicoletasarosi/Downloads/02_Inventory/src/main/java/inventory/model/Product.java
+/Users/nicoletasarosi/Downloads/02_Inventory/src/main/java/inventory/controller/ModifyProductController.java
+/Users/nicoletasarosi/Downloads/02_Inventory/src/main/java/inventory/model/Part.java
+/Users/nicoletasarosi/Downloads/02_Inventory/src/main/java/inventory/model/OutsourcedPart.java
+/Users/nicoletasarosi/Downloads/02_Inventory/src/main/java/inventory/controller/ModifyPartController.java
+/Users/nicoletasarosi/Downloads/02_Inventory/src/main/java/inventory/model/Inventory.java
+/Users/nicoletasarosi/Downloads/02_Inventory/src/main/java/inventory/controller/MainScreenController.java
+/Users/nicoletasarosi/Downloads/02_Inventory/src/main/java/inventory/controller/AddProductController.java
+/Users/nicoletasarosi/Downloads/02_Inventory/src/main/java/inventory/Main.java
+/Users/nicoletasarosi/Downloads/02_Inventory/src/main/java/inventory/controller/AddPartController.java
+/Users/nicoletasarosi/Downloads/02_Inventory/src/main/java/inventory/errorHandler/errorHandler.java
