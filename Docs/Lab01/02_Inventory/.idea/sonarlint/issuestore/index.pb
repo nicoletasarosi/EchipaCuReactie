@@ -11,8 +11,6 @@ i
 9src/main/java/inventory/controller/AddPartController.java,6/0/60c45c8b83590f796b548300881eb5e32034406b
 Q
 !src/main/java/inventory/Main.java,e/c/ece56c845d15f2c366abf3aa1a07420ba35ea01b
-\
-,src/main/java/inventory/model/Inventory.java,6/f/6f314193286495a02fb473e4cf32b85ed85f7dcf
 W
 'src/main/resources/fxml/ModifyPart.fxml,b/d/bdc81a4933047356164c78dbc311d49a9ab75b2d
 T
@@ -43,3 +41,23 @@ Z
 *src/main/java/inventory/model/Product.java,b/1/b1f9f60d378ed17b8cfbd23f6880c72f0d6cb447
 f
 6src/main/java/inventory/errorHandler/errorHandler.java,7/3/73cca7d262bf34a7adc39fdcde5f09a674810900
+P
+ target/classes/fxml/AddPart.fxml,9/f/9fab0fe15a30fb222c6ced5109d9f61939fc7801
+S
+#target/classes/fxml/MainScreen.fxml,9/5/9569687657e5ac227156b9ef3aafb36f0e4322e5
+V
+&target/classes/fxml/ModifyProduct.fxml,f/6/f68b25322383505de71e54a975d3bdf4df6b1d7d
+M
+target/classes/data/items.txt,8/3/83a1017694e1f9eb9e9d9f8ecf57ab391bda3ca8
+S
+#target/classes/fxml/AddProduct.fxml,e/9/e98e0ac9015561b23c343239516d2b16f553ffa7
+S
+#target/classes/fxml/ModifyPart.fxml,2/a/2a55d3f7777105d2faef14158ca33320394426c2
+€
+Ptarget/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst,3/d/3da01db98b88a8057c03354880f06dba49d3e795
+‚
+Rtarget/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst,8/a/8ae396f369da14bb5c0973286facff8fb2c70d56
+Q
+!src/main/resources/data/items.txt,3/7/37354ebab069b75d30b44e7e4fb6f571626dc977
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec

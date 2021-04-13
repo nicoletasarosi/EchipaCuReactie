@@ -1,30 +1,26 @@
 
-w
-java:S1450"\Remove the "modifyProduct" field and declare it as a local variable in the relevant methods.(ø½é‚ùÿÿÿÿ
-T	java:S106"9Replace this use of System.out or System.err by a logger.(ò¤áÿûÿÿÿÿ
-j
-java:S1450"TRemove the "scene" field and declare it as a local variable in the relevant methods.(‹ôÒ¡
-M
-java:S2696Ê"6Make the enclosing method "static" or remove this set.(„¿¬‰
-R
-java:S2696Ö"6Make the enclosing method "static" or remove this set.(„“”ôÿÿÿÿÿ
-M
-java:S2696×"6Make the enclosing method "static" or remove this set.(ŒÑ³ã
-L
-java:S3655¥"5Call "result.isPresent()" before accessing the value.(ÃÇûŞ
-T	java:S106§"9Replace this use of System.out or System.err by a logger.(¤¡ñÄÿÿÿÿÿ
-M
-java:S2696É"6Make the enclosing method "static" or remove this set.(ËØ”¦
-o
-java:S1450"YRemove the "modifyPart" field and declare it as a local variable in the relevant methods.(Ê‡×ß
-O	java:S106ì"9Replace this use of System.out or System.err by a logger.(¤Õï«
-o
-java:S1450"TRemove the "stage" field and declare it as a local variable in the relevant methods.(‹ğÑœıÿÿÿÿ
-T	java:S106é"9Replace this use of System.out or System.err by a logger.(´ä”×úÿÿÿÿ
-T	java:S106’"9Replace this use of System.out or System.err by a logger.(½ğöÈıÿÿÿÿ
-Q	java:S125w"<This block of commented-out lines of code should be removed.( ÆüÖ
-œ
-java:S1186S"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ª¯şàüÿÿÿÿ
-O	java:S106©"9Replace this use of System.out or System.err by a logger.(¢¬õ÷
-L
-java:S3655è"5Call "result.isPresent()" before accessing the value.(ÃÇûŞ
+v
+java:S1450"YRemove the "modifyPart" field and declare it as a local variable in the relevant methods.(Ê‡×ß8Ôç®ƒ/
+~
+java:S1450"\Remove the "modifyProduct" field and declare it as a local variable in the relevant methods.(ø½é‚ùÿÿÿÿ8Ôç®ƒ/
+q
+java:S1450"TRemove the "scene" field and declare it as a local variable in the relevant methods.(‹ôÒ¡8Ôç®ƒ/
+v
+java:S1450"TRemove the "stage" field and declare it as a local variable in the relevant methods.(‹ğÑœıÿÿÿÿ8Ôç®ƒ/
+£
+java:S1186S"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ª¯şàüÿÿÿÿ8Ôç®ƒ/
+X	java:S125w"<This block of commented-out lines of code should be removed.( ÆüÖ8Ôç®ƒ/
+[	java:S106"9Replace this use of System.out or System.err by a logger.(ò¤áÿûÿÿÿÿ8Ôç®ƒ/
+[	java:S106’"9Replace this use of System.out or System.err by a logger.(½ğöÈıÿÿÿÿ8Ôç®ƒ/
+[	java:S106§"9Replace this use of System.out or System.err by a logger.(¤¡ñÄÿÿÿÿÿ8Ôç®ƒ/
+V	java:S106©"9Replace this use of System.out or System.err by a logger.(¢¬õ÷8Ôç®ƒ/
+T
+java:S2696É"6Make the enclosing method "static" or remove this set.(ËØ”¦8Ôç®ƒ/
+T
+java:S2696Ê"6Make the enclosing method "static" or remove this set.(„¿¬‰8Ôç®ƒ/
+Y
+java:S2696Ö"6Make the enclosing method "static" or remove this set.(„“”ôÿÿÿÿÿ8Ôç®ƒ/
+T
+java:S2696×"6Make the enclosing method "static" or remove this set.(ŒÑ³ã8Ôç®ƒ/
+[	java:S106é"9Replace this use of System.out or System.err by a logger.(´ä”×úÿÿÿÿ8Ôç®ƒ/
+V	java:S106ì"9Replace this use of System.out or System.err by a logger.(¤Õï«8Ôç®ƒ/

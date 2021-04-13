@@ -1,18 +1,14 @@
 
-V	java:S125"<This block of commented-out lines of code should be removed.(îÌ¹üÿÿÿÿ
-ƒ
-java:S4165="mRemove this useless assignment; "associatedParts" already holds the assigned value along all execution paths.(˜øÒ²
-Y
-java:S1854="CRemove this useless assignment to local variable "associatedParts".(˜øÒ²
-J
-java:S1874c"/Remove this use of "Integer"; it is deprecated.(ƒ®øÿÿÿÿÿ
-:
-java:S2131c"Use "Integer.toString" instead.(ƒ®øÿÿÿÿÿ
-™
-java:S1158c"~Call the static method Integer.toString(...) instead of instantiating a temporary object to perform this to string conversion.(ƒ®øÿÿÿÿÿ
-E
-java:S1656="/Remove or correct this useless self-assignment.(˜øÒ²
-\
-java:S1155">Use isEmpty() to check whether the collection is empty or not.(ƒ·»Â8¢èÒ§ƒ/
-<
-java:S2129c"!Remove this "Integer" constructor(ƒ®øÿÿÿÿÿ
+Š
+java:S4165="mRemove this useless assignment; "associatedParts" already holds the assigned value along all execution paths.(˜øÒ²8Õç®ƒ/
+A
+java:S2131c"Use "Integer.toString" instead.(ƒ®øÿÿÿÿÿ8Õç®ƒ/
+]	java:S125"<This block of commented-out lines of code should be removed.(îÌ¹üÿÿÿÿ8Õç®ƒ/
+`
+java:S1854="CRemove this useless assignment to local variable "associatedParts".(˜øÒ²8Õç®ƒ/
+L
+java:S1656="/Remove or correct this useless self-assignment.(˜øÒ²8Õç®ƒ/
+ 
+java:S1158c"~Call the static method Integer.toString(...) instead of instantiating a temporary object to perform this to string conversion.(ƒ®øÿÿÿÿÿ8Õç®ƒ/
+Q
+java:S1874c"/Remove this use of "Integer"; it is deprecated.(ƒ®øÿÿÿÿÿ8Õç®ƒ/
