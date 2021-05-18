@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>reqspec Prj236 - snir2610_ReqSpec</title>
+<link type="text/css" rel="stylesheet" href="http://localhost:8080/testlink/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo"  width= height= src="http://localhost:8080/testlink/gui/themes/default/images/tl-logo-transparent-25.png" /></p></div>
+<div class="doc_title"><p>Requirements Specification Document</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Test Project: Prj236</p></div>
+<div class="summary"><p id="printedby">Printed by TestLink on 13/05/2021</p></div>
+<div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
+<h1 class="general" style="page-break-before: always">Table Of Contents</h1><div class="toc"><br/><p style="padding-left: 20px;"><b><a href="#toc_1">1. snir2610_ReqSpec : snir2610_ReqSpec</a></b></p>
+<p style="padding-left: 45px;"><a href="#toc_req5911">snir2610_F01 : snir2610_F01</a></p><p style="padding-left: 45px;"><a href="#toc_req7241">snir2610_F02 : snir2610_F02</a></p></div><p style="page-break-before: always"></p><table class="req_spec"><tr><th colspan="2"><h2 class="doclevel"> <span class="label">1. Requirements Spec.:</span> snir2610_ReqSpec : snir2610_ReqSpec</h2></th></tr>
+<a name='toc_1'></a>
+<tr><td width="20%"><span class="label">revision</span></td><td> 1</td></tr>
+<tr><td width="20%"><span class="label">Author</span></td><td> snir2610</td></tr>
+<tr><td width="20%"><span class="label">Type</span></td><td>System Requirement Specification</td></tr><tr><td width="20%"><span class="label">Total count of requirements (Coverage)</span></td><td>N/A (2/0)</td></tr><tr><td colspan="2"></td></tr></table><br/>
+<table class="req" ><tr><th colspan="2"><span class="label">Requirement:</span> snir2610_F01 : snir2610_F01</th></tr>
+<tr><td valign="top"><span class="label">Version :</span></td><td>1</td></tr>
+<tr><td valign="top"><span class="label">revision:</span></td><td>1</td></tr>
+<a name="toc_req5911"></a><tr><td valign="top"><span class="label">Author:</span></td><td>snir2610</td></tr>
+<tr><td width="20%"><span class="label">Status</span></td><td>Implemented</td></tr><tr><td width="20%"><span class="label">Type</span></td><td>Feature</td></tr><tr><td width="20%"><span class="label">Coverage</span></td><td>25% (1/4)</td></tr><tr><td colspan="2"> <br/><p>addProduct(String name, double price, int inStock, int min, int &nbsp;max, ObservableList&lt;Part&gt; addParts)&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</p>
+
+<p>preconditii:</p>
+
+<p>- name: string cu lungimea &gt; 0</p>
+
+<p>- min, max: numere intregi pozitive nenule cu proprietatea ca min &lt; max</p>
+
+<p>- inStock: numar intreg din intervalul [min, max]</p>
+
+<p>- price: numar real &gt; 0</p>
+
+<p>-addParts: lista pieselor din care e alcatuit produsul (lungime &gt; 1)</p>
+
+<p>postconditii:</p>
+
+<p>-produsul se adauga in lista de produse</p></td></tr><tr><td width="20%"><span class="label">Related Test Cases</span></td><td>236-71 : AddProduct_ECP_priceValid &nbsp;[Version :1]236-72 : AddProduct_ECP_priceNONValid &nbsp;[Version :1]236-73 : AddProduct_BVA_inStockValid &nbsp;[Version :1]236-74 : AddProduct_BVA_inStockNONValid &nbsp;[Version :1]236-120 : TC_IntegrationStep1 &nbsp;[Version :1]236-121 : TC_IntegrationStep2 &nbsp;[Version :1]236-122 : TC_IntegrationStep3 &nbsp;[Version :1]</td></tr></table><br/><table class="req" ><tr><th colspan="2"><span class="label">Requirement:</span> snir2610_F02 : snir2610_F02</th></tr>
+<tr><td valign="top"><span class="label">Version :</span></td><td>1</td></tr>
+<tr><td valign="top"><span class="label">revision:</span></td><td>1</td></tr>
+<a name="toc_req7241"></a><tr><td valign="top"><span class="label">Author:</span></td><td>snir2610</td></tr>
+<tr><td width="20%"><span class="label">Status</span></td><td>Draft</td></tr><tr><td width="20%"><span class="label">Type</span></td><td>Use Case</td></tr><tr><td width="20%"><span class="label">Coverage</span></td><td>16.67% (1/6)</td></tr><tr><td colspan="2"> <br/><p>F02b. Cautarea unui produs dupa nume (se returneaza null in cazul in care nu s-a gasit niciun produs).</p>
+
+<p>Product lookUpProduct (String searchIndex);</p>
+
+<p>preconditii: lista produselor se afla in repository</p></td></tr><tr><td width="20%"><span class="label">Related Test Cases</span></td><td>236-93 : lookupProduct-valid &nbsp;[Version :1]236-94 : lookupProduct-valid-2 &nbsp;[Version :1]236-95 : lookupProduct-nonValid &nbsp;[Version :1]236-96 : lookupProduct-valid-3 &nbsp;[Version :1]236-97 : lookupProduct-valid-4 &nbsp;[Version :1]236-98 : lookupProduct-nonValid-2 &nbsp;[Version :1]236-99 : lookupProduct-valid-5 &nbsp;[Version :1]236-100 : lookupProduct-valid-6 &nbsp;[Version :1]236-101 : snir2610_F02 [1] &nbsp;[Version :1]</td></tr></table><br/>
+</body>
+</html>
