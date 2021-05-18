@@ -1,0 +1,399 @@
+<html xmlns="http://www.w3.org/1999/xhtml" style="" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	  <meta name="viewport" content="width=device-width">
+		<title>OKazii.ro: Intra in cont pentru vanzari si licitatii online</title>
+		
+			<script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/ec.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-TZRZCN"></script><script src="https://static.okr.ro/js/www/cdn/dfp/gpt.js" async="async"></script>
+			<script>
+				function AdsCookieManagement() {
+				}
+				
+				/**
+				 * Verificam permisiuni de afisare
+				 * @param isCookiePro
+				 * @returns {boolean}
+				 */
+				AdsCookieManagement.areAdsEnabled = function(intIsCookiePro)
+				{
+					if(intIsCookiePro == 1) {
+						Error("NotImplemented!");
+					} else {
+						if(AdsCookieManagement.getCookie("acceptcookies") == 1) {
+							return true;
+						}
+						return false;
+					}
+				}
+				
+				/**
+				 * Setare cookie
+				 * @param cname
+				 * @returns {string}
+				 */
+				AdsCookieManagement.getCookie = function(cname) {
+					var name = cname + "=";
+					var decodedCookie = decodeURIComponent(document.cookie);
+					var ca = decodedCookie.split(";");
+					for(var i = 0; i <ca.length; i++) {
+						var c = ca[i];
+						while (c.charAt(0) == " ") {
+							c = c.substring(1);
+						}
+						if (c.indexOf(name) == 0) {
+							return c.substring(name.length, c.length);
+						}
+					}
+					return "";
+				}
+				
+				/**
+				 * Initializare ads-uri
+				 * https://developers.google.com/publisher-tag/reference#googletag.PubAdsService_refresh
+				 */
+				AdsCookieManagement.initAds =  function(){
+					googletag.cmd.push(function() {
+						googletag.pubads().refresh();
+						// googletag.pubads().display(); // does not work in single request mode
+					})
+				}
+				
+				
+				/**
+				 * Dezactivare ads-uri
+				 * https://developers.google.com/publisher-tag/reference#googletag.PubAdsService_clear
+				 */
+				AdsCookieManagement.disableAds =  function(){
+					googletag.cmd.push(function() {
+						googletag.pubads().clear();
+					})
+				}	
+				
+				
+				var googletag = googletag || {};
+				googletag.cmd = googletag.cmd || [];
+				googletag.cmd.push(function () {
+					googletag.defineSlot('/10437663/www_login_600x500', [[600,500],[600,450]], 'div-gpt-ad-16').addService(googletag.pubads());
+
+					
+					googletag.pubads().enableSingleRequest();
+					googletag.pubads().collapseEmptyDivs();
+					if(!AdsCookieManagement.areAdsEnabled("0"))
+					{
+						googletag.pubads().disableInitialLoad();
+					}
+					googletag.pubads().enableLazyLoad({fetchMarginPercent: 500, renderMarginPercent: 300, mobileScaling: 2.0});
+					googletag.enableServices();
+				});
+			</script>
+			  	    				<link href="https://static.okr.ro/css/+/css/www/header.css+/css/www/font-awesome/font-awesome.css+/css/www/modules/scss/login.css/style.v1218.css" rel="stylesheet" type="text/css">
+	    				<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+	    	  		<!--[if IE 6]>
+		<style type="text/css">
+			@import url(/css/www/okazii_ie6.css);
+		</style>
+		<![endif]-->
+					<script src="https://static.okr.ro/cdn/googleapis/ajax/libs/jquery/1.12.3/jquery.min.js" type="text/javascript"></script><meta http-equiv="origin-trial" content="A+b/H0b8RPXNaJgaNFpO0YOFuGK6myDQXlwnJB3SwzvNMfcndat4DZYMrP4ClJIzYWo3/yP2S+8FTZ/lpqbPAAEAAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="A9ZgbRtm4pU3oZiuNzOsKcC8ppFSZdcjP2qYcdQrFKVzkmiWH1kdYY1Mi9x7G8+PS8HV9Ha9Cz0gaMdKsiVZIgMAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxL6oBxcpn5rQDPKSAs+d0oxNyJYq2/4esBUh3Yx5z8QfcLu+AU8iFCXYRcr/CEEfDnkxxLTsvXPJFQBxHfvkgMAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9KPtG5kl3oLTk21xqynDPGQ5t18bSOpwt0w6kGa6dEWbuwjpffmdUpR3W+faZDubGT+KIk2do0BX2ca16x8qAcAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A3HucHUo1oW9s+9kIKz8mLkbcmdaj5lxt3eiIMp1Nh49dkkBlg1Fhg4Fd/r0vL69mRRA36YutI9P/lJUfL8csQoAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A0OysezhLoCRYomumeYlubLurZTCmsjTb087OvtCy95jNM65cfEsbajrJnhaGwiTxhz38ZZbm+UhUwQuXfVPTg0AAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="AxoOxdZQmIoA1WeAPDixRAeWDdgs7ZtVFfH2y19ziTgD1iaHE5ZGz2UdSjubkWvob9C5PrjUfkWi4ZSLgWk3Xg8AAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7+rMYR5onPnACrz+niKSeFdH3xw1IyHo2AZSHmxrofRk9w4HcQPMYcpBUKu6OQ6zsdxf4m/vqa6tG6Na4OLpAQAAAB4eyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_2021042201.js" async=""></script>
+					<script src="https://static.okr.ro/cdn/googleapis/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js" type="text/javascript"></script>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js" type="text/javascript"></script>
+					<script src="https://static.okr.ro/js/www/cdn/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+					<script src="https://static.okr.ro/js/+/js/jquery/jquery_comp_prototype.js+/js/www/modernizr-2.6.2.min.js+/js/www/header.js+/js/www/okaziiJsUtils.js+/js/www/oauth-login.js/script.v1218.js" type="text/javascript"></script>
+							<script type="text/javascript">
+				var okazii_vars = {"okaziiAccount":"UA-1670804-1","action":[],"from":"other","loggedIn":"false","appi":false,"listingRequestId":"162133973270258601","searchVersion":"2.5"};
+			</script>
+			<script type="text/javascript" src="https://static.okr.ro/js/ga.js"></script>
+			</head>
+	<body class="login" onorientationchange="updateOrientation();" id="page_wrapper" style="overflow: hidden;"><div class="overlayc" id="overlayc"></div>
+	<div id="cookie-bar" class="cookie-bar" style="display: block;">
+	<div class="cookie-content">
+        <div class="p-right-30">
+            <p>
+				Okazii.ro foloseste cookie-uri pentru a imbunatati experienta de navigare dar si pentru a asigura functionalitati aditionale. 
+				Poti modifica oricand setarile acestor fisiere urmand instructiunile din Politica de Cookie.
+            </p>
+            <div class="links">
+                <span>
+                    <a href="http://ajutor.okazii.ro/informatii-cookies" title="Politica cookies" target="_blank" rel="nofollow">Politica cookies</a>                </span>
+                <span>
+                    <a href="http://ajutor.okazii.ro/politica-confidentialitate.html" title="Politica cookies" target="_blank" rel="nofollow">Politica confidentialitate</a>                </span>
+            </div>
+        </div>
+        <div class="button-agree">
+            <button type="button" class="btn btn-primary btn-block js-cookie-bar-close" onclick="cookieBar.close()">De acord</button>        </div>
+    </div>
+</div>
+<script>
+
+	var cookieBar =
+	{
+		init: function()
+		{
+			cookieBar.show();
+		},
+		removeOverlay: function()
+		{
+			document.getElementById('overlayc').remove();
+		},
+		show: function()
+		{
+			if (document.cookie.indexOf("acceptcookies") < 0)
+			{
+
+				document.body.style.overflow = 'hidden';
+
+				var elDiv = document.createElement('div');
+				elDiv.className = 'overlayc';
+				elDiv.id = 'overlayc';
+				document.body.prepend(elDiv);
+
+				document.getElementById('cookie-bar').style.display = 'block';
+
+			}
+		},
+		close: function()
+		{
+
+			if (typeof googletag != "undefined") {
+				googletag.cmd.push(function() {
+					googletag.pubads().refresh();
+					// googletag.pubads().display(); // does not work in single request mode
+				})
+			}
+
+			var objDate = new Date();
+			objDate.setDate(objDate.getDate() + 90);
+
+			var strHost = '.okazii.ro';
+
+			if(window.location.host.indexOf('newdev.ro') > 0){
+				strHost = '.newdev.ro';
+			}
+
+			document.cookie = "acceptcookies=1; expires=" + objDate.toUTCString() + ";domain="+strHost+";path=/";
+			document.body.style.overflow = 'auto';
+			$j('#cookie-bar').slideUp(200);
+			cookieBar.removeOverlay();
+
+		}
+	};
+
+	cookieBar.init();
+
+</script>
+				<div id="wraper">
+	      
+<header class="simple">
+	<div class="container">
+		<!-- /* logo *\-->
+				<a href="/" title="Okazii.ro - portal de licitatii online" class="logo">
+            <img src="https://static.okr.ro/images/www/svg/okazii-logo.svg" alt="Okazii.ro Marketplace">
+		</a>
+		<!-- /* tagline *\-->
+				  <span class="tagline hidden-xs">Login</span>
+						<div class="user-items clearfix">
+			
+																
+							
+<div class="piv-help help-item d-inline">
+	<a title="Ajutor" href="http://ajutor.okazii.ro/" target="_blank" class="help" id="help-content">
+		Ai nevoie de ajutor?	</a>
+</div>					</div> <!-- .user-items -->
+	</div>
+	<script type="text/javascript">
+		activateHeader();
+	</script>
+</header><!-- header -->
+
+
+	      <style>
+	@import url(https://fonts.googleapis.com/css?family=Roboto:400);
+	.google-btn {
+		width: 100%;
+		height: 37px;
+		background-color: #4285f4;
+		border-radius: 2px;
+	//box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+		margin-top:20px;
+	}
+	.google-btn .google-icon-wrapper {
+		position: absolute;
+		margin-top: 1px;
+		margin-left: 1px;
+		width: 40px;
+		height: 35px;
+		border-radius: 2px;
+		background-color: #fff;
+	}
+	.google-btn .google-icon {
+		position: absolute;
+		margin-top: 8px;
+		margin-left: 11px;
+		width: 18px;
+		height: 18px;
+	}
+	.google-btn .btn-text {
+	//float: right;
+		display:block;
+		margin: 11px 11px 0 0;
+		color: #fff;
+		font-size: 16px;
+		letter-spacing: 0.2px;
+		font-family: "Roboto";
+		text-align: center;
+		padding-top: 7px;
+		padding-left:35px;
+	}
+	.google-btn:hover {
+		box-shadow: 0 0 6px #4285f4;
+	}
+	.google-btn:active {
+		background: #1669f2;
+	}
+	.google-btn a {
+		text-decoration:none;
+	}
+</style>
+<div id="content" class="container">
+	<div id="login" class="row">
+	  <div class="login-content">
+		<div class="col-sm-8 hidden-xs">
+			
+		<!-- /10437663/www_login_600x500 -->
+		<div id="div-gpt-ad-16">
+			<script>
+				googletag.cmd.push(function() {googletag.display('div-gpt-ad-16');});
+			</script>
+		</div>		</div>
+	    <div id="login_new" class="col-sm-4 col-xs-12">
+	      <div id="login_content" class="aside">
+	          <div id="login_form">
+		          <div class="login-options">
+	              <form method="post" action="">
+							  <input type="hidden" name="jval_uniqueid" value="login">
+	<input type="hidden" name="hash" value="710be912e3fb28a361c8737bbda161a8">
+	<input type="hidden" name="salt" value="deee9c5bf102866e4ae4b38eb19972f0">
+	<input type="hidden" name="captcha_unique" value="">
+								<div class="form-group">
+									<label class="login_usr" for="login_input"><strong>Intra in cont</strong></label>
+									<input id="login_input" type="text" name="username" class="form-control focusOnLoad login_input" tabindex="1" placeholder="Utilizator sau E-mail" style="">
+								</div>
+		            <div class="form-group">
+	                <label class="login_usr" for="login_pass"><strong>Parola</strong></label>
+									<span class="help-block pull-right">
+										<a href="https://www.okazii.ro/recuperareparola" class="parola_uitata" tabindex="5" title="parola">Ai uitat parola?</a>
+									</span>
+	                <input type="password" name="password" id="login_pass" class="form-control login_input" tabindex="2" placeholder="Parola" style="">
+		            </div>
+		            <div class="form-group checkbox-chkremember">
+	                <label class="checkbox chkremember" for="chkremember">
+		                <span class="custom-checkbox checked">
+											<input type="hidden" name="cookie_extend" value="0">
+											<input type="checkbox" name="cookie_extend" value="1" checked="checked" id="chkremember" tabindex="3">
+		                  <span class="box"><span class="tick"></span></span>
+											Păstrează-mă logat
+		                </span><!-- Tine minte -->
+	                </label>
+		            </div>
+		            		            								<div class="form-group">
+									<button name="loginbtn" type="submit" value="login" title="Login" class="btn btn-block btn-primary login_btn" tabindex="4" style="">Login</button>
+								</div>
+								<div class="help-block text-center">
+									<span>
+										Nu ai cont?
+																					<a href="https://www.okazii.ro/inregistrare" tabindex="7">
+												<strong>Înregistreaza-te</strong>
+											</a>
+																			</span>
+								</div>
+                <input type="hidden" name="login" value="">
+	            </form>
+		          </div>
+		          								<div class="login-options">
+									<span><span>SAU</span></span>
+																			<div class="login-social">
+											<a id="socialbutton" class="oauth-login btn btn-block btn-social" href="https://www.okazii.ro/login?oauth=start&amp;provider=facebook&amp;cookie_extend=1&amp;display=popup" title="Login cu Facebook">
+												<span style="font-weight: 400"><i class="fa fa-facebook-official"></i>&nbsp;&nbsp; Login cu Facebook</span>
+											</a>
+																							<div class="google-btn" style="margin-bottom:20px;">
+													<a class="oauth-login" href="https://www.okazii.ro/login?oauth=start&amp;provider=google&amp;cookie_extend=1&amp;display=popup" target="_blank" title="Login cu Google">
+													<div class="google-icon-wrapper">
+														<img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg">
+													</div>
+													<p class="btn-text"><b>Login cu Google</b></p>
+													</a>
+												</div>
+																																</div>
+																	</div>
+		          	          </div>
+	      </div>
+			</div>
+	  </div>
+  </div>
+</div>
+<script type="text/javascript">
+	document.getElementById("login_input").focus();
+	OkaziiJsUtil.customInputs();
+	OkaziiJsUtil.scrollTop();
+
+	$j('#chkremember').on('change', function(){
+
+		if($j(this).is(':checked')){
+			$j('#socialbutton').attr('href', 'https://www.okazii.ro/login?oauth=start&provider=facebook&cookie_extend=1');
+		} else {
+			$j('#socialbutton').attr('href', 'https://www.okazii.ro/login?oauth=start&provider=facebook');
+		}
+
+	});
+</script>
+	      <footer class="simple" role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-4">
+                <div class="secure-logo"> </div>
+            </div>
+            <div class="col-md-9 col-sm-8">
+                <div class="footer-links">
+                    <a target="_blank" href="http://ajutor.okazii.ro/contul-meu/confidentialitate">Politica de confidenţialitate </a> &nbsp; • &nbsp;
+                    <a target="_blank" href="http://ajutor.okazii.ro/termeni-si-conditii"> Termeni şi conditii </a> &nbsp; • &nbsp;
+                    <a target="_blank" rel="noopener" href="http://www.anpc.gov.ro/" title="PROTECTIA CONSUMATORILOR – ANPC"> ANPC</a>
+                </div>
+                <div class="footer-links">
+                    <span>Tel: 0374652944 de luni până vineri între 09:00 - 18:00</span>
+                    <span>Email: <a href="mailto:suport@okazii.ro">suport@okazii.ro</a></span>
+                </div>
+                <div class="copyrights">
+                    ©2021                    S.C. BITFACTOR S.R.L., CUI: RO33928115, Registrul Comertului: J40/14882/2014
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="back-to-top">
+      <a href="#content" title="Sus"><i class="fa fa-angle-up"></i></a>
+    </div>
+</footer> <!-- footer -->
+	  </div>
+		
+	<script type="text/javascript">t_start_time=new Date().getTime();</script>
+
+<script type="text/javascript" id="">function native_events_gaTrack(a,c,b,d,e){dataLayer.push({event:"gaEvent",ec:c,ea:a,el:b,ev:d,eb:e})}function ga__createCookie(a,c,b){if(b){var d=new Date;d.setTime(d.getTime()+864E5*b);b="; expires\x3d"+d.toGMTString()}else b="";document.cookie=a+"\x3d"+c+b+";domain\x3dokazii.ro; path\x3d/"}
+function ga__readCookie(a){a+="\x3d";for(var c=document.cookie.split(";"),b=0;b<c.length;b++){for(var d=c[b];" "==d.charAt(0);)d=d.substring(1,d.length);if(0==d.indexOf(a))return d.substring(a.length,d.length)}return""}function ga__sortTracking(a,c){var b=ga__readCookie("__utmsort");b?b!=a&&(native_events_gaTrack(c,"Sortare aplicata",a,0),ga__createCookie("__utmsort",a)):ga__createCookie("__utmsort",a)}
+"listare"!=google_tag_manager["GTM-TZRZCN"].macro(510)&&"cautare"!=google_tag_manager["GTM-TZRZCN"].macro(511)||ga__sortTracking(okazii_vars.sort,okazii_vars.pageName);
+function events_gaTrack(a,c){var b="";"produs adaugat la urmarite"==a&&(b="true"==google_tag_manager["GTM-TZRZCN"].macro(512)?"logat":"ne-logat");"Suna vanzator"==a?((userID=ga__readCookie("__utmusrid"))||(userID="na"),native_events_gaTrack("Click Suna Vanzator","produs",userID+" - "+google_tag_manager["GTM-TZRZCN"].macro(513))):"Afisare numar telefon"==a?((userID=ga__readCookie("__utmusrid"))||(userID="na"),native_events_gaTrack("Click Afisare numar telefon","produs",userID+" - "+google_tag_manager["GTM-TZRZCN"].macro(514))):0==c?native_events_gaTrack(a,google_tag_manager["GTM-TZRZCN"].macro(515),
+b,0,!0):native_events_gaTrack(a,google_tag_manager["GTM-TZRZCN"].macro(516),b,0)}var _headerClick=document.location.hash.match(/#([0-9]+)\-([0-9])\-([0-9]+)$/);null!=_headerClick&&native_events_gaTrack("Meniu principal pozitia"+_headerClick[1],"Click linkuri menu header","Coloana: "+_headerClick[2]+" - Pozitia: "+_headerClick[3],0,!0);
+jQuery(document).ready(function(){jQuery(".toggle-item.closed-item.settings-trigger").click(function(){0==jQuery(".head-dropdown.settings-panel:in-viewport").length&&native_events_gaTrack("Deschidere pop-up cautare","Cautare header")})});"#cautare-avansata-header"==document.location.hash&&native_events_gaTrack("Click link cautare avansata","Cautare header","",0,!0);"#favprods"==document.location.hash&&native_events_gaTrack("Click link produse favorite","Favorite header","",0,!0);
+"#favsearches"==document.location.hash&&native_events_gaTrack("Click link cautari favorite","Favorite header","",0,!0);"#favsellers"==document.location.hash&&native_events_gaTrack("Click link vanzatori favoriti","Favorite header","",0,!0);
+jQuery(document).ready(function(){jQuery("[title\x3d'Recomanda pe Facebook']").click(function(){native_events_gaTrack("Facebook button click","Social Media Button Click")});jQuery("[title\x3d'Recomanda pe Twitter']").click(function(){native_events_gaTrack("Twitter button click","Social Media Button Click")});jQuery("[title\x3d'Share on Google+']").click(function(){native_events_gaTrack("Google+ button click","Social Media Button Click")})});
+jQuery("#customer-modal .container-modal a").click(function(){native_events_gaTrack("Click "+this.title,"Click Widget Lateral Support Clienti","Sectiune: "+google_tag_manager["GTM-TZRZCN"].macro(517))});jQuery("#js-btn-customer-support").click(function(){native_events_gaTrack("Deschidere Widget","Click Widget Lateral Support Clienti","Sectiune: "+google_tag_manager["GTM-TZRZCN"].macro(518))});google_tag_manager["GTM-TZRZCN"].macro(519)&&ga__createCookie("__norez","0rez");
+if(google_tag_manager["GTM-TZRZCN"].macro(520))for(i=0;i<google_tag_manager["GTM-TZRZCN"].macro(521).length;i++)"Speciala in liste"!=google_tag_manager["GTM-TZRZCN"].macro(522)[i]||"cautare"!=google_tag_manager["GTM-TZRZCN"].macro(523)&&"listare"!=google_tag_manager["GTM-TZRZCN"].macro(524)||ga__createCookie("splst",google_tag_manager["GTM-TZRZCN"].macro(525));var absuccess=1;if("object"==typeof google_tag_manager["GTM-TZRZCN"].macro(526))for(i=0;i<google_tag_manager["GTM-TZRZCN"].macro(527).length;i++)"object"==typeof google_tag_manager["GTM-TZRZCN"].macro(528)[i].abtest&&absuccess++;
+"produs"==google_tag_manager["GTM-TZRZCN"].macro(529)&&google_tag_manager["GTM-TZRZCN"].macro(530)&&localStorage.setItem(google_tag_manager["GTM-TZRZCN"].macro(531),JSON.stringify({campanie:google_tag_manager["GTM-TZRZCN"].macro(532),data:Math.floor(Date.now()/1E3)}));!0===jQuery(".login_error").is(":visible")&&native_events_gaTrack("Eroare","Login",jQuery(".login_error").text().trim(),0,!0);
+(function(a){a.belowthefold=function(c,b){var d=a(window).height()+a(window).scrollTop();return d<=a(c).offset().top-b.threshold};a.abovethetop=function(c,b){var d=a(window).scrollTop();return d>=a(c).offset().top+a(c).height()-b.threshold};a.rightofscreen=function(c,b){var d=a(window).width()+a(window).scrollLeft();return d<=a(c).offset().left-b.threshold};a.leftofscreen=function(c,b){var d=a(window).scrollLeft();return d>=a(c).offset().left+a(c).width()-b.threshold};a.inviewport=function(c,b){return!a.rightofscreen(c,
+b)&&!a.leftofscreen(c,b)&&!a.belowthefold(c,b)&&!a.abovethetop(c,b)};a.extend(a.expr[":"],{"below-the-fold":function(c,b,d){return a.belowthefold(c,{threshold:0})},"above-the-top":function(c,b,d){return a.abovethetop(c,{threshold:0})},"left-of-screen":function(c,b,d){return a.leftofscreen(c,{threshold:0})},"right-of-screen":function(c,b,d){return a.rightofscreen(c,{threshold:0})},"in-viewport":function(c,b,d){return a.inviewport(c,{threshold:0})}})})(jQuery);dataLayer.push({event:"functionsLoaded"});</script><script type="text/javascript" id="">function getCookie(c){c+="\x3d";var b=decodeURIComponent(document.cookie);b=b.split(";");for(var d=0;d<b.length;d++){for(var a=b[d];" "==a.charAt(0);)a=a.substring(1);if(0==a.indexOf(c))return a.substring(c.length,a.length)}return""}var blnPopupSlot1Shown=!1;
+blnPopupSlot1Shown||!google_tag_manager["GTM-TZRZCN"].macro(533)||"true"!=google_tag_manager["GTM-TZRZCN"].macro(534)||getCookie("pm-popupLC-closed")||"checkout"==google_tag_manager["GTM-TZRZCN"].macro(535)||"true"!=google_tag_manager["GTM-TZRZCN"].macro(536)||(setTimeout(function(){dataLayer.push({event:"displayPopup",intPManagerDisplayPopup:8})},3E3),blnPopupSlot1Shown=!0);
+!blnPopupSlot1Shown&&google_tag_manager["GTM-TZRZCN"].macro(537)&&"false"==google_tag_manager["GTM-TZRZCN"].macro(538)&&google_tag_manager["GTM-TZRZCN"].macro(539)&&"true"==google_tag_manager["GTM-TZRZCN"].macro(540)&&!getCookie("pm-popupLCi-closed")&&"checkout"!=google_tag_manager["GTM-TZRZCN"].macro(541)&&"true"==google_tag_manager["GTM-TZRZCN"].macro(542)&&(setTimeout(function(){dataLayer.push({event:"displayPopup",intPManagerDisplayPopup:9})},3E3),blnPopupSlot1Shown=!0);
+!blnPopupSlot1Shown&&google_tag_manager["GTM-TZRZCN"].macro(543)&&10<google_tag_manager["GTM-TZRZCN"].macro(544)&&!google_tag_manager["GTM-TZRZCN"].macro(545)&&!getCookie("pm-popup1-closed")&&"/contul-meu/financiar/"!=google_tag_manager["GTM-TZRZCN"].macro(546)&&"checkout"!=google_tag_manager["GTM-TZRZCN"].macro(547)&&"true"==google_tag_manager["GTM-TZRZCN"].macro(548)&&(setTimeout(function(){dataLayer.push({event:"displayPopup",intPManagerDisplayPopup:1})},3E3),blnPopupSlot1Shown=!0);
+!blnPopupSlot1Shown&&google_tag_manager["GTM-TZRZCN"].macro(549)&&google_tag_manager["GTM-TZRZCN"].macro(550)&&!getCookie("pm-popup5-closed")&&"/contul-meu/financiar/"!=google_tag_manager["GTM-TZRZCN"].macro(551)&&"checkout"!=google_tag_manager["GTM-TZRZCN"].macro(552)&&"true"==google_tag_manager["GTM-TZRZCN"].macro(553)&&(setTimeout(function(){dataLayer.push({event:"displayPopup",intPManagerDisplayPopup:5})},3E3),blnPopupSlot1Shown=!0);
+!blnPopupSlot1Shown&&15<=google_tag_manager["GTM-TZRZCN"].macro(554)&&!google_tag_manager["GTM-TZRZCN"].macro(555)&&"contul-meu"==google_tag_manager["GTM-TZRZCN"].macro(556)&&!getCookie("pm-popup2-closed")&&(setTimeout(function(){dataLayer.push({event:"displayPopup",intPManagerDisplayPopup:2})},3E3),blnPopupSlot1Shown=!0);
+blnPopupSlot1Shown||!google_tag_manager["GTM-TZRZCN"].macro(557)||google_tag_manager["GTM-TZRZCN"].macro(558)||"contul-meu"!=google_tag_manager["GTM-TZRZCN"].macro(559)||getCookie("pm-popup3-closed")||(setTimeout(function(){dataLayer.push({event:"displayPopup",intPManagerDisplayPopup:3})},3E3),blnPopupSlot1Shown=!0);
+blnPopupSlot1Shown||getCookie("pm-popupvara2021-closed")||!getCookie("acceptcookies")||"/oferte-vacanta-vara2021/"==google_tag_manager["GTM-TZRZCN"].macro(560)||"cautare"!=google_tag_manager["GTM-TZRZCN"].macro(561)&&"listare"!=google_tag_manager["GTM-TZRZCN"].macro(562)&&"recomandate"!=google_tag_manager["GTM-TZRZCN"].macro(563)&&"true"!=google_tag_manager["GTM-TZRZCN"].macro(564)||(setTimeout(function(){dataLayer.push({event:"displayPopup",intPManagerDisplayPopup:6})},3E3),blnPopupSlot1Shown=!0);</script><script type="text/javascript" id="">var afterqmstr=bannerGA=campaignGA="";if(-1!=document.location.href.indexOf("?")){var afterqm=document.location.href.split("?");afterqm.shift();afterqmstr=-1!=afterqm.indexOf("?")?afterqm.join("?"):1<afterqm.length?afterqm.join("\x26"):afterqm[0];afterqmstr=decodeURIComponent(afterqmstr)}
+if(-1!=afterqmstr.indexOf("\x26"))for(var chunks=afterqmstr.split("\x26"),i=0;i<=chunks.length-1;i++)"icid"==chunks[i].split("\x3d")[0]&&(campaignGA=chunks[i].split("\x3d")[1]),"ibid"==chunks[i].split("\x3d")[0]&&(bannerGAFull=bannerGA=chunks[i].split("\x3d")[1],-1!=bannerGA.indexOf("[")&&(bannerGA=bannerGA.split("[")[0]));else-1!=afterqmstr.split("\x3d")[0].indexOf("icid")&&(campaignGA=afterqmstr.split("\x3d")[1]);
+if(""!=campaignGA){""==bannerGA&&(bannerGAFull=bannerGA="no-banner-name");var gaCookie=ga__readCookie("__utmoc"),gaCookieValue=campaignGA+"?"+bannerGAFull;if(gaCookie)gaCookie!=gaCookieValue&&(ga__createCookie("__utmoc",gaCookieValue),native_events_gaTrack(bannerGA,"Banner intern: "+campaignGA,"click",0,!0),campanieInterna={Banner:bannerGA,Campanie:campaignGA,Action:"click",keen:{timestamp:(new Date).toISOString()}});else{ga__createCookie("__utmoc",gaCookieValue);native_events_gaTrack(bannerGA,"Banner intern: "+
+campaignGA,"click",0,!0);var campanieInterna={Banner:bannerGA,Campanie:campaignGA,Action:"click",keen:{timestamp:(new Date).toISOString()}}}};</script></body></html>

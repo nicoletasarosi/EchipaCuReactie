@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: org.example.features.search.SearchByKeywordStory
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 1, Time elapsed: 16.746 s <<< FAILURE! - in org.example.features.search.SearchByKeywordStory
+searching_by_keyword_apple_should_display_the_corresponding_article(org.example.features.search.SearchByKeywordStory)  Time elapsed: 7.559 s  <<< ERROR!
+net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: 
+Expected enabled element was not enabled
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Alexandrus-MacBook-Pro.local', ip: 'fe80:0:0:0:5:fc7a:d1c1:dbac%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15'
+Driver info: driver.version: unknown
+	at org.example.features.search.SearchByKeywordStory.searching_by_keyword_apple_should_display_the_corresponding_article(SearchByKeywordStory.java:28)
+

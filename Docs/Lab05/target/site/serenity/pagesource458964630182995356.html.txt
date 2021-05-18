@@ -1,0 +1,942 @@
+<html xml:lang="ro" lang="ro"><head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ 	<title>Autentificare | Cont nou | www.epiesa.ro</title>
+	<meta name="language" content="Romanian">
+	<meta name="description" content="Formular de autentificare, Formular de cont nou. Pentru a lansa o comanda pe acest site este nevoie sa va autentificati. Datele raman salvate si pentru urmatoarea comanda.">
+	<meta name="Copyright" content="Copyright © 2011 epiesa.ro, toate drepturile rezervate.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+	<meta name="google-site-verification" content="q8-gx9t2t9g35JAm2JrXZAadNlrRrzpM2BArng31vA4"><link rel="stylesheet" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/screen.css">
+		<link rel="stylesheet" href="/css/styles.css?v=1.8">
+
+		<style>
+			.form-control{
+				height: 45px;
+			}
+			@media(max-width:479px){
+
+
+			}
+		</style>
+		
+		<link rel="stylesheet" href="/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/css/bootstrap-select.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
+		<link rel="stylesheet" href="/css/slick.css">
+		<link rel="stylesheet" href="/css/slick-theme.css">
+			
+		<script type="text/javascript" async="" src="https://www.google.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=AW-1019890060&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://connect.facebook.net/signals/config/1674393036211112?v=2.9.39&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script src="/js/jquery-2.2.3.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="/js/bootstrap-select.min.js"></script>
+		<script src="/js/jquery-migrate-1.2.1.min.js"></script>
+		<script src="/js/slick.js"></script>
+		<script src="/js/script.js"></script><link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+	<meta name="google-site-verification" content="hrDT3soYv_S3Clou87pQxBsWTzNqKHCo0M4K-9eLIiY"><link rel="canonical" href="https://www.epiesa.ro/autentificare-epiesa/"><script type="text/javascript" src="/js/js_auth.js"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-27814074-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-27814074-2');
+	  gtag('config', 'AW-1019890060');
+	</script>
+	
+	
+	<!-- Facebook Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+	n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+	document,'script','https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '1674393036211112');
+	fbq('track', 'PageView');
+
+
+	</script>
+
+
+	<script>
+	
+			function showResults_search(str) {
+
+			  if (str.length<4) {
+
+				  $("#topsearch").hide();
+				  $("#topdropdown").hide();
+
+				  return;
+			  }
+			  else {
+
+				  $("#topsearch").show();
+				  $("#topdropdown").show();
+			  }
+
+			  if (window.XMLHttpRequest) {
+				
+				xmlhttp=new XMLHttpRequest();
+			  } 
+			  else {
+
+				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+
+			  xmlhttp.onreadystatechange=function() {
+
+				  if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+
+					  document.getElementById("topsearch").innerHTML=xmlhttp.responseText;
+				  }
+
+			  }
+
+			  xmlhttp.open("GET", "/camp_search.php?q="+str, true);
+			  xmlhttp.send();
+			}
+
+
+
+			function showResultsMobile_search(str) {
+
+			  if (str.length<4) {
+
+				  $("#topsearchMobile").hide();
+				  $("#topdropdownMobile").hide();
+
+				  return;
+			  }
+			  else {
+
+				  $("#topsearchMobile").show();
+				  $("#topdropdownMobile").show();
+			  }
+
+			  if (window.XMLHttpRequest) {
+				
+				xmlhttp=new XMLHttpRequest();
+			  } 
+			  else {
+
+				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+
+			  xmlhttp.onreadystatechange=function() {
+
+				  if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+
+					  document.getElementById("topsearchMobile").innerHTML=xmlhttp.responseText;
+				  }
+
+			  }
+
+			  xmlhttp.open("GET", "/camp_search.php?q="+str, true);
+			  xmlhttp.send();
+			}
+
+	</script>
+
+
+	<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1674393036211112&ev=PageView&noscript=1" /></noscript>
+	<!-- DO NOT MODIFY -->
+	<!-- End Facebook Pixel Code -->
+
+<script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1019890060/?random=1621339403425&amp;cv=9&amp;fst=1621339403425&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;eid=2505059651&amp;u_h=1120&amp;u_w=1792&amp;u_ah=1047&amp;u_aw=1792&amp;u_cd=24&amp;u_his=1&amp;u_tz=180&amp;u_java=false&amp;u_nplug=0&amp;u_nmime=0&amp;sendb=1&amp;ig=1&amp;frm=0&amp;url=https%3A%2F%2Fwww.epiesa.ro%2Fautentificare-epiesa%2F&amp;tiba=Autentificare%20%7C%20Cont%20nou%20%7C%20www.epiesa.ro&amp;hn=www.googleadservices.com&amp;rfmt=3&amp;fmt=4"></script><script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1019890060/?random=1621339403892&amp;cv=9&amp;fst=1621339403892&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;eid=2505059650&amp;u_h=1120&amp;u_w=1792&amp;u_ah=1047&amp;u_aw=1792&amp;u_cd=24&amp;u_his=1&amp;u_tz=180&amp;u_java=false&amp;u_nplug=0&amp;u_nmime=0&amp;gtm=2oa5c1&amp;sendb=1&amp;ig=0&amp;data=event%3Dgtag.config&amp;frm=0&amp;url=https%3A%2F%2Fwww.epiesa.ro%2Fautentificare-epiesa%2F&amp;tiba=Autentificare%20%7C%20Cont%20nou%20%7C%20www.epiesa.ro&amp;hn=www.google.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script></head>
+
+
+<body><nav class="navbar navbar-gg">
+
+	  	<div class="container">
+
+		    <div class="navbar-header">
+
+		      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+		      		<span class="sr-only"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+		      	</button><a class="navbar-brand hidden-xs" href="/" title="piese auto online"><img src="/images/logo.png" alt="piese auto online"></a>
+				<a class="navbar-brand visible-xs" href="/" title="piese auto online"><img src="/images/logo-mobile.png" alt="piese auto online"></a>
+
+				<div class="visible-xs xs-nav-items pull-right"><span><a href="/autentificare-epiesa/" title="favorite epiesa.ro"><i class="fa fa-heart-o"></i></a></span><span><a href="/cos-cumparaturi-epiesa/" title="cos cumparaturi epiesa.ro"><img class="cart-icon" alt="" src="/images/cart-negru.svg"></a></span></div>
+
+		    </div>
+
+		    <div class="collapse navbar-collapse" id="myNavbar">
+
+		      	<ul class="nav navbar-nav navbar-top gg">
+
+		      		<li class="dropdown visible-xs">
+
+		          		 <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><img class="contact-logo" src="/images/contact-logo.png" alt=""> CONTUL MEU  <span class="hidden-xs fa bold fa-angle-down size-17"></span></a>
+
+			          	<ul class="dropdown-menu default-menu"><li><a href="/autentificare-epiesa/">LOGIN / CONT NOU</a></li></ul>
+
+			        </li>
+
+					<li><a href="/piese-auto" title="piese auto dupa marca"> Piese auto </a></li>
+
+			        <li><a href="/magazine-epiesa/" title="magazine epiesa.ro">Magazine</a></li>
+
+			        <li class="dropdown">
+		          		<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><span class="hidden-xs caret color-default"></span><span class="hidden-xs">&nbsp;</span> Info</a>
+			          	<ul class="dropdown-menu default-menu">
+				            <li><a href="/facturi-epiesa/" title="descarca factura si garantia epiesa.ro">Descarca factura si garantie</a></li>
+				            <li><a href="/livrarea-produselor/" title="livrare produselor epiesa.ro">Livrarea produselor</a></li>
+				            <li><a href="/garantie-si-returnare/" title="garantie si retur epiesa.ro">Garantie si retur</a></li>
+				            <li><a href="/intrebari-frecvente/" title="intrebari frecvente">Intrebari frecvente</a></li>
+				            <li><a href="/cum-platesc/" title="cum platesc">Cum platesc?</a></li>
+			          	</ul>
+			        </li>
+
+					 <li><a href="/service/" title="service partener epiesa.ro" target="_blank">Service</a></li>
+				    
+				    <li><a href="/contact-epiesa/">CONTACT</a></li>					
+
+		      	</ul>
+
+		      	<ul class="nav navbar-nav navbar-right navbar-top  hidden-xs">
+
+			        <li class="dropdown hover-dropdown">
+
+		          		<a class="dropdown-toggle " href="javascript:void(0);"><img class="contact-logo" src="/images/contact-logo.png" alt=""> CONTUL MEU  <span class="fa bold fa-angle-down size-17"></span> </a>
+
+			          	<ul class="dropdown-menu default-menu"><li><a href="/autentificare-epiesa/">LOGIN / CONT NOU</a></li></ul>
+
+			        </li>
+
+			    </ul>
+
+		    </div>
+
+	  	</div>
+
+	</nav>
+
+
+	<nav class="navbar nav-2 menu-mobile">
+
+		<div class="container padding-0 padding-comeback">	
+
+	        <div class="mainProdSearch visible-xs">
+
+				<form action="/cautare-piesa/" method="get">
+
+					<input id="headersearchMobile" onkeyup="showResultsMobile_search(this.value)" type="text" placeholder="CAUTA DUPA COD PIESA SAU DENUMIRE ACCESORIU" onfocus="this.value='';" class="placeholder" name="find" autocomplete="off">
+
+					<input type="submit" value="">					
+
+					<div id="topdropdownMobile">
+						<div id="topsearchMobile">
+						</div>
+					</div>					
+
+				</form>
+
+			</div>
+
+
+			<div class="dropdown pise-universe-dropdown hidden-xs">
+
+	            <div data-toggle="dropdown" class="pise-universe-menu black-bold" data-target="#">
+	               <i class="fa fa-bars hidden-xs"></i><span class="hidden-xs">&nbsp;&nbsp;</span> PIESE UNIVERSALE <span class="hidden-xs">&nbsp;&nbsp;</span> <span class="mobile-right fa bold fa-angle-down size-20"></span>
+	            </div>
+
+	    		<ul class="dropdown-menu multi-level" role="menu"><li class="dropdown-submenu">
+
+							<a class="a-tab-menu test" href="/accesorii-auto/ulei-lubrifianti/" title="ULEI/LUBRIFIANTI"><img src="/images/icon-1-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-1.png" alt=""> Ulei/lubrifianti</a>
+
+							<ul class="dropdown-menu hidden-xs">
+
+								<li>
+
+									<div class="col-xs-12 col-sm-12"><ul><li class="title gg"><a href="/ulei-motor/acc/" title="ULEI MOTOR">ULEI MOTOR</a></li></ul><ul><li class="title gg"><a href="/ulei-hidraulic/acc/" title="ULEI HIDRAULIC">ULEI HIDRAULIC</a></li></ul><ul><li class="title gg"><a href="/ulei-transmisie/acc/" title="ULEI TRANSMISIE">ULEI TRANSMISIE</a></li></ul><div class="clearfix"></div><ul class="margin-top-30"><li class="title gg"><a href="/vaselina/acc/" title="VASELINA">VASELINA</a></li></ul><ul class="margin-top-30"><li class="title gg"><a href="/ulei-compresor/acc/" title="ULEI COMPRESOR">ULEI COMPRESOR</a></li></ul><ul class="margin-top-30"><li class="title gg"><a href="/ulei-motociclete-si-barci/acc/" title="ULEI MOTOCICLETE SI BARCI">ULEI MOTOCICLETE SI BARCI</a></li></ul><div class="clearfix"></div></div>
+
+								</li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a class="a-tab-menu test" href="/accesorii-auto/lichide/" title="LICHIDE"><img src="/images/icon-2-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-2.png" alt=""> Lichide</a>
+
+							<ul class="dropdown-menu hidden-xs">
+
+								<li>
+
+									<div class="col-xs-12 col-sm-12"><ul><li class="title gg"><a href="/apa-distilata/acc/" title="APA DISTILATA">APA DISTILATA</a></li></ul><ul><li class="title gg"><a href="/antigel/acc/" title="ANTIGEL">ANTIGEL</a></li></ul><ul><li class="title gg"><a href="/lichid-frana/acc/" title="LICHID FRANA">LICHID FRANA</a></li></ul><div class="clearfix"></div><ul class="margin-top-30"><li class="title gg"><a href="/lichid-de-parbriz/acc/" title="LICHID DE PARBRIZ">LICHID DE PARBRIZ</a></li></ul></div>
+
+								</li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a class="a-tab-menu test" href="/accesorii-auto/electrice/" title="ELECTRICE"><img src="/images/icon-3-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-3.png" alt=""> Electrice</a>
+
+							<ul class="dropdown-menu hidden-xs">
+
+								<li>
+
+									<div class="col-xs-12 col-sm-12"><ul><li class="title gg"><a href="/baterii-auto/acc/" title="BATERII AUTO">BATERII AUTO</a></li></ul><ul><li class="title gg"><a href="/becuri-auto/acc/" title="BECURI AUTO">BECURI AUTO</a></li></ul><ul><li class="title gg"><a href="/sigurante/acc/" title="SIGURANTE">SIGURANTE</a></li></ul><div class="clearfix"></div><ul class="margin-top-30"><li class="title gg"><a href="/electrice-diverse/acc/" title="ELECTRICE DIVERSE">ELECTRICE DIVERSE</a></li></ul></div>
+
+								</li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a class="a-tab-menu test" href="/accesorii-auto/intretinere-auto/" title="INTRETINERE AUTO"><img src="/images/icon-4-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-4.png" alt=""> Intretinere auto</a>
+
+							<ul class="dropdown-menu hidden-xs">
+
+								<li>
+
+									<div class="col-xs-12 col-sm-12"><ul><li class="title gg"><a href="/chimice-auto/acc/" title="CHIMICE AUTO">CHIMICE AUTO</a></li></ul><ul><li class="title gg"><a href="/curatare-ac/acc/" title="CURATARE AC">CURATARE AC</a></li></ul><ul><li class="title gg"><a href="/cosmetice-auto/acc/" title="COSMETICE AUTO">COSMETICE AUTO</a></li></ul><div class="clearfix"></div><ul class="margin-top-30"><li class="title gg"><a href="/scule-si-accesorii/acc/" title="SCULE SI ACCCESORII">SCULE SI ACCCESORII</a></li></ul></div>
+
+								</li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a class="a-tab-menu test" href="/accesorii-auto/accesorii-diverse/" title="ACCESORII DIVERSE"><img src="/images/icon-5-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-5.png" alt=""> Accesorii diverse</a>
+
+							<ul class="dropdown-menu hidden-xs">
+
+								<li>
+
+									<div class="col-xs-12 col-sm-12"><ul><li class="title gg"><a href="/accesorii-iarna/acc/" title="ACCESORII IARNA">ACCESORII IARNA</a></li></ul><ul><li class="title gg"><a href="/accesorii-exterior/acc/" title="ACCESORII EXTERIOR">ACCESORII EXTERIOR</a></li></ul><ul><li class="title gg"><a href="/accesorii-interior/acc/" title="ACCESORII INTERIOR">ACCESORII INTERIOR</a></li></ul><div class="clearfix"></div><ul class="margin-top-30"><li class="title gg"><a href="/covorase-auto/acc/" title="COVORASE AUTO">COVORASE AUTO</a></li></ul><ul class="margin-top-30"><li class="title gg"><a href="/tavita-portbagaj/acc/" title="TAVITA PORTBAGAJ">TAVITA PORTBAGAJ</a></li></ul><ul class="margin-top-30"><li class="title gg"><a href="/scaun-auto-copii/acc/" title="SCAUN AUTO COPII">SCAUN AUTO COPII</a></li></ul><div class="clearfix"></div><ul class="margin-top-30"><li class="title gg"><a href="/huse-scaune-auto/acc/" title="HUSE SCAUNE AUTO">HUSE SCAUNE AUTO</a></li></ul><ul class="margin-top-30"><li class="title gg"><a href="/paravanturi/acc/" title="PARAVANTURI">PARAVANTURI</a></li></ul><ul class="margin-top-30"><li class="title gg"><a href="/genti/acc/" title="GENTI">GENTI</a></li></ul><div class="clearfix"></div><ul class="margin-top-30"><li class="title gg"><a href="/accesorii-telefoane/acc/" title="ACCESORII TELEFOANE">ACCESORII TELEFOANE</a></li></ul><ul class="margin-top-30"><li class="title gg"><a href="/carlig-auto/acc/" title="CARLIG AUTO">CARLIG AUTO</a></li></ul></div>
+
+								</li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a class="a-tab-menu test" href="/accesorii-auto/roti/" title="ROTI"><img src="/images/icon-6-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-6.png" alt=""> Roti</a>
+
+							<ul class="dropdown-menu hidden-xs">
+
+								<li>
+
+									<div class="col-xs-12 col-sm-12"><ul><li class="title gg"><a href="/lanturi-antiderapante/acc/" title="LANTURI ROTI">LANTURI ROTI</a></li></ul><ul><li class="title gg"><a href="/anvelope-auto/" title="ANVELOPE AUTO">ANVELOPE AUTO</a></li></ul><ul><li class="title gg"><a href="/jante-auto/acc/" title="JANTE AUTO">JANTE AUTO</a></li></ul><div class="clearfix"></div><ul class="margin-top-30"><li class="title gg"><a href="/huse/acc/" title="HUSE">HUSE</a></li></ul><ul class="margin-top-30"><li class="title gg"><a href="/suporti/acc/" title="SUPORTI">SUPORTI</a></li></ul><ul class="margin-top-30"><li class="title gg"><a href="/capace-roti/acc/" title="CAPACE ROTI">CAPACE ROTI</a></li></ul><div class="clearfix"></div><ul class="margin-top-30"><li class="title gg"><a href="/pentru-umflat/acc/" title="PENTRU UMFLAT">PENTRU UMFLAT</a></li></ul></div>
+
+								</li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a class="a-tab-menu test" href="/accesorii-auto/sasiu/" title="SASIU"><img src="/images/icon-7-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-7.png" alt=""> Sasiu</a>
+
+							<ul class="dropdown-menu hidden-xs">
+
+								<li>
+
+									<div class="col-xs-12 col-sm-12"><ul><li class="title gg"><a href="/coliere/acc/" title="COLIERE">COLIERE</a></li></ul><ul><li class="title gg"><a href="/burduf-planetara/acc/" title="BURDUF PLANETARA">BURDUF PLANETARA</a></li></ul><ul><li class="title gg"><a href="/racorduri-flexibile/acc/" title="RACORDURI FLEXIBILE">RACORDURI FLEXIBILE</a></li></ul><div class="clearfix"></div><ul class="margin-top-30"><li class="title gg"><a href="/conector-esapament/acc/" title="CONECTOR ESAPAMENT">CONECTOR ESAPAMENT</a></li></ul><ul class="margin-top-30"><li class="title gg"><a href="/inel-etansare/acc/" title="INEL ETANSARE">INEL ETANSARE</a></li></ul></div>
+
+								</li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a class="a-tab-menu test" href="/accesorii-auto/portbagaje-suporti/" title="PORTBAGAJE/SUPORTI"><img src="/images/icon-8-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-8.png" alt=""> Portbagaje/suporti</a>
+
+							<ul class="dropdown-menu hidden-xs">
+
+								<li>
+
+									<div class="col-xs-12 col-sm-12"><ul><li class="title gg"><a href="/portbagaje/acc/" title="PORTBAGAJE">PORTBAGAJE</a></li></ul><ul><li class="title gg"><a href="/carucioare/acc/" title="CARUCIOARE">CARUCIOARE</a></li></ul></div>
+
+								</li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a class="a-tab-menu test" href="/accesorii-auto/scuturi/" title="SCUTURI"><img src="/images/icon-9-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-9.png" alt=""> Scuturi</a>
+
+							<ul class="dropdown-menu hidden-xs">
+
+								<li>
+
+									<div class="col-xs-12 col-sm-12"><ul><li class="title gg"><a href="/scuturi-auto/acc/" title="SCUTURI AUTO">SCUTURI AUTO</a></li></ul></div>
+
+								</li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a class="a-tab-menu test" href="/accesorii-auto/comunicatie/" title="COMUNICATIE"><img src="/images/icon-10-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-10.png" alt=""> Comunicatie</a>
+
+							<ul class="dropdown-menu hidden-xs">
+
+								<li>
+
+									<div class="col-xs-12 col-sm-12"><ul><li class="title gg"><a href="/detectoare-radar/acc/" title="DETECTOARE RADAR">DETECTOARE RADAR</a></li></ul><ul><li class="title gg"><a href="/statii-radio/acc/" title="STATII RADIO">STATII RADIO</a></li></ul></div>
+
+								</li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a class="a-tab-menu test" href="/accesorii-auto/securitate-auto/" title="SECURITATE AUTO"><img src="/images/icon-11-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-11.png" alt=""> Securitate auto</a>
+
+							<ul class="dropdown-menu hidden-xs">
+
+								<li>
+
+									<div class="col-xs-12 col-sm-12"><ul><li class="title gg"><a href="/securitate-confort/acc/" title="SECURITATE/CONFORT">SECURITATE/CONFORT</a></li></ul><ul><li class="title gg"><a href="/accesorii-securitate/acc/" title="ACCESORII SECURITATE">ACCESORII SECURITATE</a></li></ul></div>
+
+								</li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a class="a-tab-menu test" href="/accesorii-auto/audio-video/" title="AUDIO/VIDEO"><img src="/images/icon-12-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-12.png" alt=""> Audio/video</a>
+
+							<ul class="dropdown-menu hidden-xs">
+
+								<li>
+
+									<div class="col-xs-12 col-sm-12"><ul><li class="title gg"><a href="/audio/acc/" title="AUDIO">AUDIO</a></li></ul><ul><li class="title gg"><a href="/camere-video/acc/" title="CAMERE VIDEO">CAMERE VIDEO</a></li></ul><ul><li class="title gg"><a href="/casti/acc/" title="CASTI">CASTI</a></li></ul><div class="clearfix"></div><ul class="margin-top-30"><li class="title gg"><a href="/multimedia/acc/" title="MULTIMEDIA">MULTIMEDIA</a></li></ul></div>
+
+								</li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a class="a-tab-menu test" href="/accesorii-auto/drone/" title="DRONE"><img src="/images/icon-13-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-13.png" alt=""> Drone</a>
+
+							<ul class="dropdown-menu hidden-xs">
+
+								<li>
+
+									<div class="col-xs-12 col-sm-12"><ul><li class="title gg"><a href="/drone/acc/" title="DRONE">DRONE</a></li></ul><ul><li class="title gg"><a href="/accesorii-drone/acc/" title="ACCESORII DRONE">ACCESORII DRONE</a></li></ul></div>
+
+								</li>
+
+							</ul>							
+
+
+						</li></ul>
+
+
+	        </div>
+
+	       
+		
+	        <div class="dropdown pise-universe-dropdown visible-xs">
+
+	            <div data-toggle="dropdown" class="pise-universe-menu black-bold" data-target="#">
+	               <i class="fa fa-bars hidden-xs"></i><span class="hidden-xs">&nbsp;&nbsp;</span> PIESE UNIVERSALE <span class="hidden-xs">&nbsp;&nbsp;</span> <span class="mobile-right fa bold fa-angle-down size-20"></span>
+	            </div>
+
+	    		<ul class="dropdown-menu multi-level" role="menu"><li class="dropdown-submenu">
+
+							<a href="/accesorii-auto/ulei-lubrifianti/" title="ULEI/LUBRIFIANTI"><img src="/images/icon-1-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-1.png" alt=""> Ulei/lubrifianti<span class="dropdown-arrow"><i class="fa fa-chevron-down"></i></span></a>
+
+							<ul class="dropdown-menu xs-menu"><li class="dropdown-submenu"><a class="title test" href="/ulei-motor/acc/" title="ULEI MOTOR"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->ULEI MOTOR</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/ulei-hidraulic/acc/" title="ULEI HIDRAULIC"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->ULEI HIDRAULIC</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/ulei-transmisie/acc/" title="ULEI TRANSMISIE"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->ULEI TRANSMISIE</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/vaselina/acc/" title="VASELINA"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->VASELINA</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/ulei-compresor/acc/" title="ULEI COMPRESOR"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->ULEI COMPRESOR</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/ulei-motociclete-si-barci/acc/" title="ULEI MOTOCICLETE SI BARCI"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->ULEI MOTOCICLETE SI BARCI</a><div class="divider"></div></li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a href="/accesorii-auto/lichide/" title="LICHIDE"><img src="/images/icon-2-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-2.png" alt=""> Lichide<span class="dropdown-arrow"><i class="fa fa-chevron-down"></i></span></a>
+
+							<ul class="dropdown-menu xs-menu"><li class="dropdown-submenu"><a class="title test" href="/apa-distilata/acc/" title="APA DISTILATA"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->APA DISTILATA</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/antigel/acc/" title="ANTIGEL"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->ANTIGEL</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/lichid-frana/acc/" title="LICHID FRANA"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->LICHID FRANA</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/lichid-de-parbriz/acc/" title="LICHID DE PARBRIZ"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->LICHID DE PARBRIZ</a><div class="divider"></div></li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a href="/accesorii-auto/electrice/" title="ELECTRICE"><img src="/images/icon-3-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-3.png" alt=""> Electrice<span class="dropdown-arrow"><i class="fa fa-chevron-down"></i></span></a>
+
+							<ul class="dropdown-menu xs-menu"><li class="dropdown-submenu"><a class="title test" href="/baterii-auto/acc/" title="BATERII AUTO"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->BATERII AUTO</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/becuri-auto/acc/" title="BECURI AUTO"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->BECURI AUTO</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/sigurante/acc/" title="SIGURANTE"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->SIGURANTE</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/electrice-diverse/acc/" title="ELECTRICE DIVERSE"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->ELECTRICE DIVERSE</a><div class="divider"></div></li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a href="/accesorii-auto/intretinere-auto/" title="INTRETINERE AUTO"><img src="/images/icon-4-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-4.png" alt=""> Intretinere auto<span class="dropdown-arrow"><i class="fa fa-chevron-down"></i></span></a>
+
+							<ul class="dropdown-menu xs-menu"><li class="dropdown-submenu"><a class="title test" href="/chimice-auto/acc/" title="CHIMICE AUTO"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->CHIMICE AUTO</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/curatare-ac/acc/" title="CURATARE AC"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->CURATARE AC</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/cosmetice-auto/acc/" title="COSMETICE AUTO"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->COSMETICE AUTO</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/scule-si-accesorii/acc/" title="SCULE SI ACCCESORII"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->SCULE SI ACCCESORII</a><div class="divider"></div></li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a href="/accesorii-auto/accesorii-diverse/" title="ACCESORII DIVERSE"><img src="/images/icon-5-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-5.png" alt=""> Accesorii diverse<span class="dropdown-arrow"><i class="fa fa-chevron-down"></i></span></a>
+
+							<ul class="dropdown-menu xs-menu"><li class="dropdown-submenu"><a class="title test" href="/accesorii-iarna/acc/" title="ACCESORII IARNA"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->ACCESORII IARNA</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/accesorii-exterior/acc/" title="ACCESORII EXTERIOR"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->ACCESORII EXTERIOR</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/accesorii-interior/acc/" title="ACCESORII INTERIOR"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->ACCESORII INTERIOR</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/covorase-auto/acc/" title="COVORASE AUTO"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->COVORASE AUTO</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/tavita-portbagaj/acc/" title="TAVITA PORTBAGAJ"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->TAVITA PORTBAGAJ</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/scaun-auto-copii/acc/" title="SCAUN AUTO COPII"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->SCAUN AUTO COPII</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/huse-scaune-auto/acc/" title="HUSE SCAUNE AUTO"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->HUSE SCAUNE AUTO</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/paravanturi/acc/" title="PARAVANTURI"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->PARAVANTURI</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/genti/acc/" title="GENTI"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->GENTI</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/accesorii-telefoane/acc/" title="ACCESORII TELEFOANE"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->ACCESORII TELEFOANE</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/carlig-auto/acc/" title="CARLIG AUTO"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->CARLIG AUTO</a><div class="divider"></div></li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a href="/accesorii-auto/roti/" title="ROTI"><img src="/images/icon-6-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-6.png" alt=""> Roti<span class="dropdown-arrow"><i class="fa fa-chevron-down"></i></span></a>
+
+							<ul class="dropdown-menu xs-menu"><li class="dropdown-submenu"><a class="title test" href="/lanturi-antiderapante/acc/" title="LANTURI ROTI"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->LANTURI ROTI</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/anvelope-auto/" title="ANVELOPE AUTO"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->ANVELOPE AUTO</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/jante-auto/acc/" title="JANTE AUTO"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->JANTE AUTO</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/huse/acc/" title="HUSE"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->HUSE</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/suporti/acc/" title="SUPORTI"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->SUPORTI</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/capace-roti/acc/" title="CAPACE ROTI"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->CAPACE ROTI</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/pentru-umflat/acc/" title="PENTRU UMFLAT"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->PENTRU UMFLAT</a><div class="divider"></div></li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a href="/accesorii-auto/sasiu/" title="SASIU"><img src="/images/icon-7-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-7.png" alt=""> Sasiu<span class="dropdown-arrow"><i class="fa fa-chevron-down"></i></span></a>
+
+							<ul class="dropdown-menu xs-menu"><li class="dropdown-submenu"><a class="title test" href="/coliere/acc/" title="COLIERE"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->COLIERE</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/burduf-planetara/acc/" title="BURDUF PLANETARA"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->BURDUF PLANETARA</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/racorduri-flexibile/acc/" title="RACORDURI FLEXIBILE"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->RACORDURI FLEXIBILE</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/conector-esapament/acc/" title="CONECTOR ESAPAMENT"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->CONECTOR ESAPAMENT</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/inel-etansare/acc/" title="INEL ETANSARE"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->INEL ETANSARE</a><div class="divider"></div></li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a href="/accesorii-auto/portbagaje-suporti/" title="PORTBAGAJE/SUPORTI"><img src="/images/icon-8-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-8.png" alt=""> Portbagaje/suporti<span class="dropdown-arrow"><i class="fa fa-chevron-down"></i></span></a>
+
+							<ul class="dropdown-menu xs-menu"><li class="dropdown-submenu"><a class="title test" href="/portbagaje/acc/" title="PORTBAGAJE"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->PORTBAGAJE</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/carucioare/acc/" title="CARUCIOARE"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->CARUCIOARE</a><div class="divider"></div></li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a href="/accesorii-auto/scuturi/" title="SCUTURI"><img src="/images/icon-9-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-9.png" alt=""> Scuturi<span class="dropdown-arrow"><i class="fa fa-chevron-down"></i></span></a>
+
+							<ul class="dropdown-menu xs-menu"><li class="dropdown-submenu"><a class="title test" href="/scuturi-auto/acc/" title="SCUTURI AUTO"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->SCUTURI AUTO</a><div class="divider"></div></li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a href="/accesorii-auto/comunicatie/" title="COMUNICATIE"><img src="/images/icon-10-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-10.png" alt=""> Comunicatie<span class="dropdown-arrow"><i class="fa fa-chevron-down"></i></span></a>
+
+							<ul class="dropdown-menu xs-menu"><li class="dropdown-submenu"><a class="title test" href="/detectoare-radar/acc/" title="DETECTOARE RADAR"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->DETECTOARE RADAR</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/statii-radio/acc/" title="STATII RADIO"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->STATII RADIO</a><div class="divider"></div></li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a href="/accesorii-auto/securitate-auto/" title="SECURITATE AUTO"><img src="/images/icon-11-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-11.png" alt=""> Securitate auto<span class="dropdown-arrow"><i class="fa fa-chevron-down"></i></span></a>
+
+							<ul class="dropdown-menu xs-menu"><li class="dropdown-submenu"><a class="title test" href="/securitate-confort/acc/" title="SECURITATE/CONFORT"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->SECURITATE/CONFORT</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/accesorii-securitate/acc/" title="ACCESORII SECURITATE"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->ACCESORII SECURITATE</a><div class="divider"></div></li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a href="/accesorii-auto/audio-video/" title="AUDIO/VIDEO"><img src="/images/icon-12-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-12.png" alt=""> Audio/video<span class="dropdown-arrow"><i class="fa fa-chevron-down"></i></span></a>
+
+							<ul class="dropdown-menu xs-menu"><li class="dropdown-submenu"><a class="title test" href="/audio/acc/" title="AUDIO"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->AUDIO</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/camere-video/acc/" title="CAMERE VIDEO"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->CAMERE VIDEO</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/casti/acc/" title="CASTI"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->CASTI</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/multimedia/acc/" title="MULTIMEDIA"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->MULTIMEDIA</a><div class="divider"></div></li>
+
+							</ul>							
+
+
+						</li><li class="divider"></li><li class="dropdown-submenu">
+
+							<a href="/accesorii-auto/drone/" title="DRONE"><img src="/images/icon-13-1.png" alt="" class="icon-img icon-hover"><img class="icon-img" src="/images/icon-13.png" alt=""> Drone<span class="dropdown-arrow"><i class="fa fa-chevron-down"></i></span></a>
+
+							<ul class="dropdown-menu xs-menu"><li class="dropdown-submenu"><a class="title test" href="/drone/acc/" title="DRONE"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->DRONE</a><div class="divider"></div></li><li class="dropdown-submenu"><a class="title test" href="/accesorii-drone/acc/" title="ACCESORII DRONE"><!-- <img class="plus-img-new" src="/images/plus-img.png" alt=""> -->ACCESORII DRONE</a><div class="divider"></div></li>
+
+							</ul>							
+
+
+						</li></ul>
+
+	        </div>
+
+
+	        <div class="mainProdSearch hidden-xs">
+
+				<form action="/cautare-piesa/" method="get">
+
+					<input id="headersearch" onkeyup="showResults_search(this.value)" type="text" placeholder="CAUTA DUPA COD PIESA SAU DENUMIRE ACCESORIU" onfocus="this.value='';" class="placeholder" name="find" autocomplete="off">
+
+					<input type="submit" value="">					
+
+					<div id="topdropdown">
+						<div id="topsearch">
+						</div>
+					</div>
+
+				</form>
+
+			</div>
+
+
+			<ul class="hidden-xs xs-nav-items pull-left ul-item cosul-list">
+
+				<li class="dropdown"><a class="dropdown-toggle a-tag" href="/cos-cumparaturi-epiesa/"><span><img class="cart-icon" alt="" src="/images/cart.png"></span><span class="text">Cosul meu</span></a></li>
+
+			</ul>
+
+
+			<ul class="hidden-xs xs-nav-items pull-left ul-item fav-list">
+
+				<li class="dropdown"><a class="dropdown-toggle a-tag" href="/autentificare-epiesa/"><span><i class="fa color-white fa-heart"></i><span class="text">Favorite</span></span></a></li>
+
+			</ul>
+
+				      	
+	  	</div>
+
+	</nav>
+
+
+		<div class="containar-fluid banner-white">
+
+			<div class="banner-img-div">
+
+				<div class="container padding-0"><img class="hidden-xs on_desk" src="/images/banner-desktop-saptamana.png" alt="">
+							<img class="visible-xs on_mob" src="/images/banner-mobile-saptamana.png" alt=""></div>
+
+			</div>
+
+		</div><main class="padding-comeback auth">
+
+		<div class="container">
+
+			<h1 class="text-uppercase margin-left-10 bold size-20" style="margin-bottom: 0px;margin-top:0;">Autentifica-te sau Creeaza un cont nou </h1>
+
+			<div class="row">
+
+				<div class="col-sm-6">
+
+					<div class="moduleBlock size-16 margin-gg-43">
+
+						<h2 class="no-icon">Autentificare</h2>
+
+						<div class="clearfix"></div>
+						
+						<div class="moduleBlock-div gg-btn-div-1 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20"><form name="form_autentificare" method="post" action="/autentificare-epiesa/">
+
+									<div class="form-group">
+										<label>Adresa de e-mail:</label>
+										<input type="text" class="form-control" placeholder="" name="login_utilizator" style="">
+									</div>
+
+									<div class="form-group rec--password">
+										<label>Parola:</label>
+										<input type="password" class="form-control" placeholder="" name="login_parola" style="">
+									</div>
+
+									<div class="form-group gg-margin-1 authenticate--mobile">
+										<input type="hidden" name="action_logare" value="true">
+										<button class="btn text-uppercase radius4 large-btn btn-warning btn-lg" onclick="this.form.submit();">Autentificare</button>
+									</div>
+
+								</form>
+
+								<form name="form_recuperare" method="post" action="/autentificare-epiesa/">
+
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="form-group rec--password">
+												<label>Recuperare parola:</label>
+												<input type="text" class="form-control" placeholder="" name="email_recuperare">
+											</div>
+										</div>	
+									</div>
+
+									<div class="form-group margin-bottom-0 gg-margin-fit">
+										<input type="hidden" name="action_recuperare" value="true">
+										<button class="btn text-uppercase radius4 large-btn btn-warning btn-lg" onclick="this.form.submit();">Trimite parola</button>
+									</div>
+
+								</form></div>
+
+					</div>
+
+				</div>
+
+
+				<div class="col-sm-6">
+
+					<div class="moduleBlock size-16 margin-gg-43 more_to">
+
+						<h2 class="no-icon nc">Cont nou</h2>
+
+						<div class="clearfix"></div>
+
+						<div class="moduleBlock-div gg-btn-div-1 padding-top-20 padding-bottom-20 padding-left-20 padding-right-20 new--account--"><form onsubmit="return validare_form_cont_nou();" name="form_client_nou" method="post" action="/autentificare-epiesa/">
+
+								<div class="form-group">
+									<label>Adresa de e-mail:</label>
+									<input name="email" type="text" class="form-control" placeholder="">
+								</div>
+
+								<div class="form-group">
+									<label>Nume:</label>
+									<input name="nume" type="text" class="form-control" placeholder="">
+								</div>
+
+								<div class="form-group ">
+									<label>Prenume:</label>
+									<input name="prenume" type="text" class="form-control" placeholder="">
+								</div>
+
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label>Parola:</label>
+											<input name="parola" type="password" class="form-control" placeholder="">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group rec--password">
+											<label>Confirma parola:</label>
+											<input name="confirmare_parola" type="password" class="form-control" placeholder="">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group gg gg-margin-fit margin-bottom-0 xs-margin-top-20">
+									<input type="hidden" name="action_autentificare" value="true">
+									<input type="submit" class="btn radius4 large-btn btn-warning btn-lg" value="INREGISTRARE">
+								</div>
+
+							</form>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="clearfix"></div>
+
+			<div class="moduleAvantaje margin-top-30 margin-bottom-0" style="margin-top: 47px ;margin-bottom: 17px;">
+				<div class="cell"><span class="gama">CEA MAI VARIATA GAMA DE PRODUSE</span></div>
+				<div class="cell"><span class="livrare">LIVRARE PRIN CURIER RAPID ORIUNDE IN TARA</span></div>
+				<div class="cell"><span class="retur">POSIBILITATE DE RETUR IN 14 ZILE</span></div>
+				<div class="cell"><span class="consultanta">CONSULTANTA TEHNICA GRATUITA</span></div>
+				<div class="cell"><span class="card">MODALITATI DE PLATA VARIATE</span></div>
+			</div>
+
+		</div>
+
+	</main>
+
+
+	<footer>
+		<div class="container ">
+			<div class="innerC">
+				<div class="NLHolder">
+					<div class="headline">
+						<div class="col-xs-12 col-sm-4">
+							<p>ACHITA ONLINE PRIN CARD<br><span>SIMPLU SI RAPID</span></p>
+						</div>
+						<div class="col-xs-12 col-sm-5">
+							<img src="/images/card_banner.png" alt="#">
+						</div>
+						<div class="col-xs-12 col-sm-3">
+							<p><span>6 RATE</span><br>0% DOBANDA</p>
+						</div>
+						<span class="openForm" onclick="document.location.href='/cum-platesc/';">Vezi detalii</span>
+					</div>
+				</div>
+
+				<div class="container padding-0 lower-footer">
+					<div class="col-xs-12 padding-0">
+
+						<div class="col">
+							<h3>CONTACT</h3>
+							<p>SC EURO PARTS DISTRIBUTION SRL
+							<br>
+							Reg Com: J40/14300/2011
+							<br>
+							CUI: RO29405223
+							<br>
+							<br>
+							Bucuresti, Str. Mihai Eminescu, 
+							<br>
+							Nr. 158-160 intersectia cu str. Vasile Lascar
+							<br>
+							<br>
+							Email: <a href="ailto:vanzari@epiesa.ro">vanzari@epiesa.ro</a></p>
+						</div>
+
+						<div class="col">
+							<h3>PROGRAM DE LUCRU</h3>
+							<p>Luni - Vineri:  09:00 - 18:00
+							<br>
+							(comenzi online non-stop)
+							<br>
+							Sambata: 09:00 - 13:00
+							<br>
+							(comenzi online non-stop)
+							<br>
+							Duminica:  inchis
+							<br>
+							(comenzi online non-stop)</p>
+						</div>
+
+					</div>
+
+
+					<!-- <div class="col-xs-12 padding-0 lower-footer-2">
+
+						<h3>SUPORT CLIENTI</h3>
+
+						<div class="footer-col">
+							<ul><li>0377.100.937 - Online</li><li>031.130.04.70 - Sector 2 (Eminescu)</li><li>031.130.04.71 - Sector 2 (Pantelimon)</li><li>031.130.04.74 - Sector 4</li><li>031.130.04.73 - Sector 5</li><li>031.130.04.72 - Sector 6</li></ul>
+						</div>
+
+						<div class="footer-col">
+							<ul><li>031.130.04.75 - Oradea</li><li>031.130.04.76 - Constanta</li><li>031.130.04.77 - Ploiesti</li><li>031.130.04.78 - Brasov</li><li>031.130.04.79 - Cluj</li><li>031.130.04.80 - Timisoara</li></ul>
+						</div>
+
+						<div class="footer-col">
+							<ul><li>031.130.04.81 - Bacau</li><li>031.130.04.82 - Iasi</li><li>031.130.04.83 - Galati</li><li>031.130.04.84 - Slatina</li><li>031.130.04.85 - Craiova</li><li>031.130.04.86 - Arad</li></ul>
+						</div>
+
+						<div class="footer-col">
+							<ul><li>0771.686.324 - Targu Jiu</li><li>031.130.04.87 - Sfantu Gheorghe</li><li>031.130.04.88 - Sibiu</li><li>031.130.04.89 - Suceava</li></ul>
+						</div>
+
+					</div> -->
+
+
+					<div class="col-xs-12 padding-0 lower-footer-2">
+
+						<h3 style="margin-top: 20px;">MAGAZINE</h3><div class="footer-col">
+								<ul><li><a href="/magazin-piese-auto-bucuresti-sector-1" title="magazin piese auto SECTOR 1 (Mihalache)">Piese auto SECTOR 1 (Mihalache), BUCURESTI</a></li><li><a href="/magazin-piese-auto-bucuresti-sector-1-1" title="magazin piese auto SECTOR 1 (Chitilei)">Piese auto SECTOR 1 (Chitilei), BUCURESTI</a></li><li><a href="/magazin-piese-auto-bucuresti-sector-2" title="magazin piese auto SECTOR 2 (Eminescu)">Piese auto SECTOR 2 (Eminescu), BUCURESTI</a></li><li><a href="/magazin-piese-auto-bucuresti-sector-2-2" title="magazin piese auto SECTOR 2 (Pantelimon)">Piese auto SECTOR 2 (Pantelimon), BUCURESTI</a></li><li><a href="/magazin-piese-auto-bucuresti-sector-3" title="magazin piese auto SECTOR 3">Piese auto SECTOR 3, BUCURESTI</a></li></ul>
+								</div><div class="footer-col">
+								<ul><li><a href="/magazin-piese-auto-bucuresti-sector-4" title="magazin piese auto SECTOR 4">Piese auto SECTOR 4, BUCURESTI</a></li><li><a href="/magazin-piese-auto-bucuresti-sector-5" title="magazin piese auto SECTOR 5">Piese auto SECTOR 5, BUCURESTI</a></li><li><a href="/magazin-piese-auto-bucuresti-sector-6" title="magazin piese auto SECTOR 6">Piese auto SECTOR 6, BUCURESTI</a></li><li><a href="/magazin-piese-auto-oradea" title="magazin piese auto ORADEA">Piese auto ORADEA, BIHOR</a></li><li><a href="/magazin-piese-auto-constanta" title="magazin piese auto CONSTANTA">Piese auto CONSTANTA, CONSTANTA</a></li></ul>
+								</div><div class="footer-col">
+								<ul><li><a href="/magazin-piese-auto-ploiesti" title="magazin piese auto PLOIESTI">Piese auto PLOIESTI, PRAHOVA</a></li><li><a href="/magazin-piese-auto-brasov" title="magazin piese auto BRASOV">Piese auto BRASOV, BRASOV</a></li><li><a href="/magazin-piese-auto-cluj-napoca" title="magazin piese auto CLUJ-NAPOCA">Piese auto CLUJ-NAPOCA, CLUJ</a></li><li><a href="/magazin-piese-auto-timisoara" title="magazin piese auto TIMISOARA (Torontalului)">Piese auto TIMISOARA (Torontalului), TIMIS</a></li><li><a href="/magazin-piese-auto-bacau" title="magazin piese auto BACAU">Piese auto BACAU, BACAU</a></li></ul>
+								</div><div class="footer-col">
+								<ul><li><a href="/magazin-piese-auto-iasi" title="magazin piese auto IASI (GALATA)">Piese auto IASI (GALATA), IASI</a></li><li><a href="/magazin-piese-auto-galati" title="magazin piese auto GALATI">Piese auto GALATI, GALATI</a></li><li><a href="/magazin-piese-auto-slatina" title="magazin piese auto SLATINA">Piese auto SLATINA, OLT</a></li><li><a href="/magazin-piese-auto-craiova" title="magazin piese auto CRAIOVA">Piese auto CRAIOVA, DOLJ</a></li><li><a href="/magazin-piese-auto-arad" title="magazin piese auto ARAD">Piese auto ARAD, ARAD</a></li></ul>
+								</div><div class="footer-col">
+								<ul><li><a href="/magazin-piese-auto-targu-jiu" title="magazin piese auto TARGU JIU">Piese auto TARGU JIU, GORJ</a></li><li><a href="/magazin-piese-auto-sfantu-gheorghe" title="magazin piese auto SFANTU GHEORGHE">Piese auto SFANTU GHEORGHE, COVASNA</a></li><li><a href="/magazin-piese-auto-sibiu" title="magazin piese auto SIBIU">Piese auto SIBIU, SIBIU</a></li><li><a href="/magazin-piese-auto-suceava" title="magazin piese auto SUCEAVA">Piese auto SUCEAVA, SUCEAVA</a></li><li><a href="/magazin-piese-auto-braila" title="magazin piese auto BRAILA">Piese auto BRAILA, BRAILA</a></li></ul>
+								</div><div class="footer-col">
+								<ul><li><a href="/magazin-piese-auto-targu-mures" title="magazin piese auto TARGU MURES">Piese auto TARGU MURES, MURES</a></li><li><a href="/magazin-piese-auto-drobeta-turnu-severin" title="magazin piese auto DROBETA">Piese auto DROBETA, MEHEDINTI</a></li><li><a href="/magazin-piese-auto-targoviste" title="magazin piese auto TARGOVISTE">Piese auto TARGOVISTE, DAMBOVITA</a></li><li><a href="/magazin-piese-auto-buzau" title="magazin piese auto BUZAU">Piese auto BUZAU, BUZAU</a></li><li><a href="/magazin-piese-auto-alexandria" title="magazin piese auto ALEXANDRIA">Piese auto ALEXANDRIA, TELEORMAN</a></li></ul>
+								</div><div class="footer-col">
+								<ul><li><a href="/magazin-piese-auto-pitesti" title="magazin piese auto PITESTI">Piese auto PITESTI, ARGES</a></li><li><a href="/magazin-piese-auto-barlad" title="magazin piese auto BARLAD">Piese auto BARLAD, VASLUI</a></li><li><a href="/magazin-piese-auto-iasi-2" title="magazin piese auto IASI (PACURARI)">Piese auto IASI (PACURARI), IASI</a></li><li><a href="/magazin-piese-auto-ramnicu-valcea" title="magazin piese auto RAMNICU-VALCEA">Piese auto RAMNICU-VALCEA, VALCEA</a></li><li><a href="/magazin-piese-auto-lugoj" title="magazin piese auto LUGOJ">Piese auto LUGOJ, TIMIS</a></li></ul>
+								</div><div class="footer-col">
+								<ul><li><a href="/magazin-piese-auto-piatra-neamt" title="magazin piese auto PIATRA NEAMT">Piese auto PIATRA NEAMT, NEAMT</a></li><li><a href="/magazin-piese-auto-calarasi" title="magazin piese auto CALARASI">Piese auto CALARASI, CALARASI</a></li><li><a href="/magazin-piese-auto-alba-iulia" title="magazin piese auto ALBA-IULIA">Piese auto ALBA-IULIA, ALBA</a></li><li><a href="/magazin-piese-auto-slobozia" title="magazin piese auto SLOBOZIA">Piese auto SLOBOZIA, IALOMITA</a></li><li><a href="/magazin-piese-auto-focsani" title="magazin piese auto FOCSANI">Piese auto FOCSANI, VRANCEA</a></li></ul>
+								</div><div class="footer-col">
+								<ul><li><a href="/magazin-piese-auto-timisoara-2" title="magazin piese auto TIMISOARA (Sagului)">Piese auto TIMISOARA (Sagului), TIMIS</a></li><li><a href="/magazin-piese-auto-botosani" title="magazin piese auto BOTOSANI">Piese auto BOTOSANI, BOTOSANI</a></li><li><a href="/magazin-piese-auto-bragadiru" title="magazin piese auto BRAGADIRU">Piese auto BRAGADIRU, ILFOV</a></li><li><a href="/magazin-piese-auto-deva" title="magazin piese auto DEVA">Piese auto DEVA, HUNEDOARA</a></li><li><a href="/magazin-piese-auto-turnu-magurele" title="magazin piese auto TURNU MAGURELE">Piese auto TURNU MAGURELE, TELEORMAN</a></li></ul>
+								</div><div class="footer-col">
+								<ul><li><a href="/magazin-piese-auto-tulcea" title="magazin piese auto TULCEA">Piese auto TULCEA, TULCEA</a></li><li><a href="/magazin-piese-auto-resita" title="magazin piese auto RESITA">Piese auto RESITA, CARAS-SEVERIN</a></li><li><a href="/magazin-piese-auto-campina" title="magazin piese auto CAMPINA">Piese auto CAMPINA, PRAHOVA</a></li><li><a href="/magazin-piese-auto-onesti" title="magazin piese auto ONESTI">Piese auto ONESTI, BACAU</a></li></ul>
+								</div></div></div>	
+
+			</div>
+
+		</div>
+
+	</footer>
+
+
+	<div class="basement">
+		<div class="innerC">
+			<ul class="bold">
+				<li><a href="/piese-auto" title="marci auto"> Marci auto </a></li>
+				<li><a href="/garantie-si-returnare/" title="garantie si retur">Garantie si returnare</a></li>
+				<li><a href="/termeni-si-conditii/" title="termeni si conditii">Termeni si conditii</a></li>
+				<li><a href="/livrarea-produselor/" title="livrarea produselor">Despre livrare</a></li>
+				<li><a href="/contact-epiesa/" title="contact epiesa.ro">Contact</a></li>
+				<li><a href="/politica-confidentialitate-epiesa/" title="Conﬁdentialitatea datelor">Conﬁdentialitatea datelor</a></li>
+				<li><a href="http://www.anpc.gov.ro/" title="">ANPC</a></li>
+			</ul>
+			<div class="copy">© 2011 - 2021 epiesa.ro - Toate drepturile rezervate</div>
+		</div>
+	</div><script>
+				$(document).ready(function(){
+
+
+				$('.your-class').slick({
+				  dots: true,
+				  infinite: false,
+				  speed: 300,
+				  slidesToShow: 4,
+				  slidesToScroll: 4,
+				  responsive: [
+					{
+					  breakpoint: 1350,
+					  settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3,
+						infinite: true,
+						dots: true
+					  }
+					},
+					{
+					  breakpoint: 1220,
+					  settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					  }
+					},
+					{
+					  breakpoint: 1000,
+					  settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					  }
+					}
+					// You can unslick at a given breakpoint now by adding:
+					// settings: "unslick"
+					// instead of a settings object
+				  ]
+				});
+				});
+			</script>
+			<script>
+				jQuery(function($){
+					$('.navbar-toggle').click(function(){
+						$('.navbar-collapse').toggleClass('right');
+						$('.navbar-toggle').toggleClass('indexcity');
+					});
+				});
+			</script><script type="text/javascript">
+	/* <![CDATA[ */
+	var google_conversion_id = 1019890060;
+	var google_custom_params = window.google_tag_params;
+	var google_remarketing_only = true;
+	/* ]]> */
+	</script>
+	<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+	</script>
+	<noscript>
+	<div style="display:inline;">
+	<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1019890060/?value=0&amp;guid=ON&amp;script=0"/>
+	</div>
+	</noscript>
+	
+	
+	
+
+</body></html>
